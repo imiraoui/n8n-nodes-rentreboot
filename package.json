@@ -1,0 +1,56 @@
+{
+  "name": "n8n-nodes-rentreboot",
+  "version": "0.1.0",
+  "description": "Search NYC renter guides and retrieve neighborhood rent percentiles in n8n",
+  "license": "MIT",
+  "homepage": "https://rentreboot.com",
+  "keywords": [
+    "n8n-community-node-package",
+    "rentreboot"
+  ],
+  "author": {
+    "name": "RentReboot",
+    "url": "https://rentreboot.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imiraoui/n8n-nodes-rentreboot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imiraoui/n8n-nodes-rentreboot/issues"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "test": "node --test test/*.test.cjs",
+    "prepublishOnly": "npm run lint && npm run build && npm test",
+    "lint:code": "eslint nodes"
+  },
+  "files": [
+    "dist",
+    "examples"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [],
+    "nodes": [
+      "dist/nodes/RentReboot/RentReboot.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "0.56.4",
+    "n8n-workflow": "2.16.0",
+    "typescript": "5.9.3",
+    "eslint": "9.39.4",
+    "prettier": "3.8.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "engines": {
+    "node": ">=22.16"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "node": "n8n-nodes-rentreboot.rentReboot",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": [
+    "Miscellaneous"
+  ],
+  "resources": {
+    "primaryDocumentation": [
+      {
+        "url": "https://rentreboot.com/agents.md"
+      }
+    ]
+  }
+}
